@@ -5,7 +5,7 @@ printNetwork($network);
 
 function getNetwork()
 {
-	$contents = trim(file_get_contents("network.csv"));
+	$contents = trim(file_get_contents("/usr/local/bin/netlist/network.csv"));
 	$rows = explode("\n", $contents);
 
 	$network = array("ID" => "", "IP" => "");
