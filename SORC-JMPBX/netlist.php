@@ -22,7 +22,7 @@ function getNetwork()
 
 function isOnline($ip)
 {
-	exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($ip)), $res, $rval);
+	exec(sprintf('ping -c 1 -W 1 %s', escapeshellarg($ip)), $res, $rval);
 	return $rval === 0; // $rval = 0 if online
 }
 
