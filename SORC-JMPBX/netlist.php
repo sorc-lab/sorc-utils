@@ -28,7 +28,7 @@ function isOnline($ip)
 
 function printNetwork($network)
 {
-	$net_cnt = count($network);
+	$net_cnt = count($network["ID"]);
 	for ($i = 0; $i < $net_cnt; $i++) {
 		$id = $network["ID"][$i];
 		$ip = $network["IP"][$i];
